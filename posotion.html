@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            background-color: rgb(223, 251, 194);
+        }
+
+        #container{
+border: 4px solid black;
+height: 3000px;
+
+        }
+        .box {
+            border: 3px solid black;
+            height: 120px;
+            width: 120px;
+            margin: 5px;
+            display: inline-block;
+
+
+        }
+
+        span {
+            color: rgb(30, 50, 182);
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: 15px auto;
+        }
+#box1{
+    position: relative;
+    top: 20px;
+}
+#box2{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    
+}
+#box3{
+    position: fixed;
+    bottom: 5px;
+    right: 30px;
+}
+#box4{
+    position: sticky;
+    top: 4px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box" id="box1">1 <span>contact us <img
+                    src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?q=80&w=1985&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""></span></div>
+        <div class="box" id="box2">2 <span>contact us</span></div>
+        <div class="box" id="box3">3 <span>contact us</span></div>
+        <div class="box" id="box4">4 <span>contact us</span></div>
+    </div>
+
+</body>
+
+</html>
