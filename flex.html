@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            border: 3px solid red;
+            width: 90%;
+            height: 400px;
+            margin: 0px auto;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+
+
+        }
+
+        .item {
+            border: 2px solid black;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(127, 199, 191);
+            width: 150px;
+            height: 150px;
+        }
+        #item1{
+            order: 5;
+            /* flex-grow:2  ; */
+            /* flex-shrink: 5; */
+            /* flex-basis: 600px; */
+
+        }
+        #item2{
+            align-self: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">first item</div>
+        <div class="item" id="item2">second item</div>
+        <div class="item" id="item3">thirditem</div>
+        <!-- <div class="item" id="item4">fourth item</div>
+        <div class="item" id="item5">fifth item</div>
+        <div class="item" id="item6">sixth item</div> -->
+    </div>
+
+
+</body>
+
+</html>

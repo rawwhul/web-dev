@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selecors</title>
+    <style>
+
+
+        /* attreibute selector */
+        input[type='number']{
+            display: block;
+            border: 2px solid red;
+        }
+        /* ul p{
+            color: blueviolet;
+        } */
+
+/* li p{
+    color: red;
+} */
+
+a>p{
+    color: blue;
+    background-color: green;
+}
+li+p{
+    color: tomato;
+}
+li:nth-child(7){
+    color: red;
+}
+li:nth-child(2n+4){
+    background-color: lightblue;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="form.php">
+            <input type="text" placeholder="enter your name">
+            <input type="number" placeholder="enter your roll number">
+
+        </form>
+        <div>
+            <button>submit</button>
+        </div>
+        <div>
+            <ul>
+                
+                <li class="item1">item-1</li>
+                <li class="item2">item-2</li>
+                <li class="item3">item-3</li>
+                <li class="item4">item-4</li>
+                <li class="item5">item-5</li>
+                <li class="item6">item-6</li>
+                <li class="item7">item-7</li>
+                <li class="item8">item-8</li>
+                <li class="item9">item-9</li>
+                <p>this is my name </p>
+
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

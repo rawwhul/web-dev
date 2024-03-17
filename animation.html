@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and keyframes</title>
+    <style>
+        .container {
+            background-color: rgb(106, 106, 196);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .box {
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            background-color: aquamarine;
+            animation-name: rahul;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes rahul {
+            from {
+                width: 250px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        .load {
+            /* background-color: red; */
+            height: 7px;
+            animation-name: loading;
+            animation-fill-mode: forwards;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-direction:reverse; */
+        }
+
+        @keyframes loading {
+            from {
+                width: 0px;
+                background-color: black;
+            }
+
+            to {
+                width: 100%;
+                background-color: red;
+
+            }
+        }
+
+        .moving {
+            display: flex;
+            position: relative;
+            height: 250px;
+            width: 250px;
+            background-color: blue;
+            animation-name: move;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes move {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 250px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                top: 250px;
+                left: 0px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+
+    </div>
+    <hr>
+    <div class="load"></div>
+    <hr>
+    <div class="moving">
+
+    </div>
+
+</body>
+
+</html>
